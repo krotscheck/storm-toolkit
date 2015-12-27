@@ -38,7 +38,6 @@ public final class STKAssert {
      */
     @IgnoreCoverage
     private STKAssert() {
-
     }
 
     /**
