@@ -17,6 +17,7 @@
   <modules>
     <module>storm-toolkit-util</module>
     <module>storm-toolkit-core</module>
+    <module>storm-toolkit-test</module>
     <module>storm-toolkit-all</module>
   </modules>
 
@@ -547,6 +548,14 @@
         <groupId>net.krotscheck.stk</groupId>
         <artifactId>storm-toolkit-util</artifactId>
         <version>${project.version}</version>
+      </dependency>
+
+      <!-- Test utilities -->
+      <dependency>
+        <groupId>net.krotscheck.stk</groupId>
+        <artifactId>storm-toolkit-test</artifactId>
+        <version>${project.version}</version>
+        <scope>test</scope>
       </dependency>
     </dependencies>
   </dependencyManagement>
