@@ -18,6 +18,7 @@
     <module>storm-toolkit-util</module>
     <module>storm-toolkit-core</module>
     <module>storm-toolkit-test</module>
+    <module>storm-toolkit-merge-bolt</module>
     <module>storm-toolkit-all</module>
   </modules>
 
