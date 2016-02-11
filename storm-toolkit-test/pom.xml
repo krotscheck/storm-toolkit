@@ -54,6 +54,11 @@
       <groupId>net.krotscheck.stk</groupId>
       <artifactId>storm-toolkit-util</artifactId>
     </dependency>
+
+    <dependency>
+      <groupId>net.krotscheck.stk</groupId>
+      <artifactId>storm-toolkit-core</artifactId>
+    </dependency>
   </dependencies>
 
 </project>
