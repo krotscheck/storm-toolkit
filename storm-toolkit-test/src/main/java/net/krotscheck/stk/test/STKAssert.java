@@ -47,10 +47,12 @@ public final class STKAssert {
      * equals() method.
      *
      * @param component A storm bolt or spout to test.
+     * @param <T> A serializable component.
      * @throws Exception Testing Exceptions.
+     * @return The newly deserialized component.
      */
-    public static void assertReserializable(final Serializable component)
-            throws Exception {
+    public static <T extends Serializable> T assertReserializable(
+            final T component) throws Exception {
 
         // Serialize the object
         ByteArrayOutputStream baos = new ByteArrayOutputStream();
@@ -62,8 +64,10 @@ public final class STKAssert {
         // Deserialize the object
         ByteArrayInputStream bais = new ByteArrayInputStream(result);
         ObjectInputStream ois = new ObjectInputStream(bais);
-        Object newComponent = ois.readObject();
+        T newComponent = (T) ois.readObject();
 
         Assert.assertTrue(component.equals(newComponent));
+
+        return newComponent;
     }
 }

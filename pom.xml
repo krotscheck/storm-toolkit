@@ -19,6 +19,7 @@
     <module>storm-toolkit-core</module>
     <module>storm-toolkit-test</module>
     <module>storm-toolkit-merge-bolt</module>
+    <module>storm-toolkit-filter-column-bolt</module>
     <module>storm-toolkit-all</module>
   </modules>
 
@@ -549,6 +550,13 @@
         <groupId>net.krotscheck.stk</groupId>
         <artifactId>storm-toolkit-util</artifactId>
         <version>${project.version}</version>
+      </dependency>
+
+      <!-- Apache commons -->
+      <dependency>
+        <groupId>org.apache.commons</groupId>
+        <artifactId>commons-lang3</artifactId>
+        <version>3.4</version>
       </dependency>
 
       <!-- Test utilities -->
